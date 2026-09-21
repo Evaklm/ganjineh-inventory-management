@@ -45,6 +45,15 @@ flowchart TD
 
 Python · Flask · SQLAlchemy · SQLite · PostgreSQL · Jinja · JavaScript · pytest · Docker · Nuitka
 
+## Selected public example
+
+[`examples/inventory_example.py`](examples/inventory_example.py) is a small, synthetic illustration of available, shortage, and projected-inventory calculations. It is intentionally independent of the production application and contains no customer information, database access, or deployment logic.
+
+```bash
+python examples/inventory_example.py
+python -m unittest examples/test_inventory_example.py
+```
+
 ## Validation
 
 The private test suite covers core order and inventory workflows, Excel reporting, database upgrades, verified backups, duplicate-request protection, invalid-row rejection, login throttling, and concurrent inventory operations.
